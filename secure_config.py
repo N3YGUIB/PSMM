@@ -9,10 +9,10 @@ remplacements = [
     ('user="monitor_app"', 'user=DB_UTILISATEUR'),
     ('password="Debian13"', 'password=DB_MOT_DE_PASSE'),
     ('database="supervision"', 'database=DB_NOM'),
-    ('message["From"] = "najib.benkouider@laplateforme.io"', 'message["From"] = SMTP_EXPEDITEUR'),
-    ('message["To"] = "najib.benkouider@laplateforme.io"', 'message["To"] = SMTP_DESTINATAIRE'),
-    ('serveur_smtp.login("najib.benkouider@laplateforme.io", "rocv dihv lwke vool")', 'serveur_smtp.login(SMTP_EXPEDITEUR, SMTP_MOT_DE_PASSE)'),
-    ('url_webhook = "https://chat.googleapis.com/v1/spaces/AAQAmaBsxEc/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=dzzOwVu1XIas-b6DVfmxk-_gGi9l1VDnjhtQUhyojqw"', 'url_webhook = WEBHOOK_CHAT'),
+    ('message["From"] = "[ADRESSE@MAIL.COM]"', 'message["From"] = SMTP_EXPEDITEUR'),
+    ('message["To"] = "[ADRESSE@MAIL.COM]"', 'message["To"] = SMTP_DESTINATAIRE'),
+    ('serveur_smtp.login("[ADRESSE@MAIL.COM]", "[key_api_mail]")', 'serveur_smtp.login(SMTP_EXPEDITEUR, SMTP_MOT_DE_PASSE)'),
+    ('url_webhook = "[URL_WEBHOOK]"', 'url_webhook = WEBHOOK_CHAT'),
 ]
 
 dossier = os.path.expanduser("~")
